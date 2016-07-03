@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /Users/thutrangnguyen/Sites/vault-nodejs/package.json
+5 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/debug/package.json
+7 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/express/package.json
+8 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/jade/package.json
+9 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/mongodb/package.json
+10 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/mongoose/package.json
+11 verbose installManyTop reading scoped package data from /Users/thutrangnguyen/Sites/vault-nodejs/node_modules/morgan/package.json
+12 verbose readDependencies loading dependencies from /Users/thutrangnguyen/Sites/vault-nodejs/package.json
+13 silly cache add args [ 'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+13 silly cache add   null ]
+14 verbose cache add spec git+https://thutrang-nguyen@github.com/vault-nodejs/express.git
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+15 silly cache add   scope: null,
+15 silly cache add   name: null,
+15 silly cache add   rawSpec: 'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+15 silly cache add   spec: 'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+15 silly cache add   type: 'hosted',
+15 silly cache add   hosted:
+15 silly cache add    { type: 'github',
+15 silly cache add      ssh: 'git@github.com:vault-nodejs/express.git',
+15 silly cache add      sshUrl: 'git+ssh://git@github.com/vault-nodejs/express.git',
+15 silly cache add      httpsUrl: 'git+https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+15 silly cache add      gitUrl: 'git://thutrang-nguyen@github.com/vault-nodejs/express.git',
+15 silly cache add      shortcut: 'github:vault-nodejs/express',
+15 silly cache add      directUrl: 'https://thutrang-nguyen@raw.githubusercontent.com/vault-nodejs/express/master/package.json' } }
+16 verbose addRemoteGit caching git+https://thutrang-nguyen@github.com/vault-nodejs/express.git
+17 verbose addRemoteGit git+https://thutrang-nguyen@github.com/vault-nodejs/express.git is a repository hosted by github
+18 silly tryClone cloning git+https://thutrang-nguyen@github.com/vault-nodejs/express.git via git+https://thutrang-nguyen@github.com/vault-nodejs/express.git
+19 verbose tryClone https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823 not in flight; caching
+20 verbose correctMkdir /Users/thutrangnguyen/.npm/_git-remotes correctMkdir not in flight; initializing
+21 verbose makeDirectory /Users/thutrangnguyen/.npm/_git-remotes creation not in flight; initializing
+22 silly makeDirectory /Users/thutrangnguyen/.npm/_git-remotes uid: 501 gid: 20
+23 info git [ 'clone',
+23 info git   '--template=/Users/thutrangnguyen/.npm/_git-remotes/_templates',
+23 info git   '--mirror',
+23 info git   'https://thutrang-nguyen@github.com/vault-nodejs/express.git',
+23 info git   '/Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823' ]
+24 error git clone --template=/Users/thutrangnguyen/.npm/_git-remotes/_templates --mirror https://thutrang-nguyen@github.com/vault-nodejs/express.git /Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823: Cloning into bare repository '/Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823'...
+24 error git clone --template=/Users/thutrangnguyen/.npm/_git-remotes/_templates --mirror https://thutrang-nguyen@github.com/vault-nodejs/express.git /Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823: remote: Invalid username or password.
+24 error git clone --template=/Users/thutrangnguyen/.npm/_git-remotes/_templates --mirror https://thutrang-nguyen@github.com/vault-nodejs/express.git /Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823: fatal: Authentication failed for 'https://thutrang-nguyen@github.com/vault-nodejs/express.git/'
+25 verbose stack Error: Command failed: git clone --template=/Users/thutrangnguyen/.npm/_git-remotes/_templates --mirror https://thutrang-nguyen@github.com/vault-nodejs/express.git /Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823
+25 verbose stack Cloning into bare repository '/Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823'...
+25 verbose stack remote: Invalid username or password.
+25 verbose stack fatal: Authentication failed for 'https://thutrang-nguyen@github.com/vault-nodejs/express.git/'
+25 verbose stack
+25 verbose stack     at ChildProcess.exithandler (child_process.js:213:12)
+25 verbose stack     at emitTwo (events.js:87:13)
+25 verbose stack     at ChildProcess.emit (events.js:172:7)
+25 verbose stack     at maybeClose (internal/child_process.js:827:16)
+25 verbose stack     at Socket.<anonymous> (internal/child_process.js:319:11)
+25 verbose stack     at emitOne (events.js:77:13)
+25 verbose stack     at Socket.emit (events.js:169:7)
+25 verbose stack     at Pipe._onclose (net.js:486:12)
+26 verbose cwd /Users/thutrangnguyen/Sites/vault-nodejs
+27 error Darwin 15.5.0
+28 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "git+https://thutrang-nguyen@github.com/vault-nodejs/express.git"
+29 error node v4.4.7
+30 error npm  v2.15.8
+31 error code 128
+32 error Command failed: git clone --template=/Users/thutrangnguyen/.npm/_git-remotes/_templates --mirror https://thutrang-nguyen@github.com/vault-nodejs/express.git /Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823
+32 error Cloning into bare repository '/Users/thutrangnguyen/.npm/_git-remotes/https-thutrang-nguyen-github-com-vault-nodejs-express-git-abba7823'...
+32 error remote: Invalid username or password.
+32 error fatal: Authentication failed for 'https://thutrang-nguyen@github.com/vault-nodejs/express.git/'
+33 error If you need help, you may report this error at:
+33 error     <https://github.com/npm/npm/issues>
+34 verbose exit [ 1, true ]
