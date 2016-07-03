@@ -7,13 +7,7 @@ var router = express.Router();
 
 router.route('/')
 	.get(function(req, res) {
-		Values.find({}, function(err, docs) {
-			if (!err) {
-				res.status(404).json(docs);
-			} else {
-				res.status(500).json({message: err});
-			}
-		});
+		res.status(404).json({message: "404 Not found. Please use the right route for this API."});
 	})
 	.post(function(req, res) {
 		var data = req.body;
