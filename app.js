@@ -5,7 +5,13 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // Connect to the database
-var url = "mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/";
+var db_name = 'objects';
+//provide a sensible default for local development
+url = 'mongodb://127.0.0.1:27017/' + db_name;
+//take advantage of openshift env vars when available:
+if(process.env.OPENSHIFT_MONGODB_DB_URL){
+  url = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
+}
 mongoose.connect(url);
 
 var objects = require('./routes/objects');
